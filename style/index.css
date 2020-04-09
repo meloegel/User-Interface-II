@@ -29,6 +29,9 @@ vertical-align: baseline;
     box-sizing:border-box;
     max-width: 100%;
 }
+html{
+    font-size:62.5%;
+}
 
 #mainCont{
     display:flex;
@@ -39,32 +42,37 @@ vertical-align: baseline;
 
 header{
     background-color: dodgerblue;
-    border:5px solid gold;
+    border:.25rem solid gold;
 }
 
 h1 {
-    font-size:80px;
+    font-size:8rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
 }
 
 h2{
-    font-size:40px;
-    margin-bottom:40px;
+    font-size:4rem;
+    margin-bottom:4rem;
 }
 h3{
-    font-size:40px;
-    margin-bottom:20px;
+    font-size:4rem;
+    margin-bottom:2rem;
+    margin-top:1rem;
+}
+h4{
+    font-size:2.2rem;
 }
 
 #mainImage {
   width: 45%; 
-  margin-top: 20px; 
-  margin-bottom:20px;
+  margin-top: 2rem; 
+  margin-bottom:2rem;
 }
 
 header nav{
     text-align:left;
-    padding:5px;  
+    padding:.25rem;  
     display: flex;
     justify-content: left;
 }
@@ -80,21 +88,24 @@ align-content:baseline;
 #home{
     background-color:blueviolet;
     color:white;
-    margin-left:40px;
+    margin-left:4rem;
 }
 
 button{
-    font-size:24px;
-    margin-bottom:20px;
+    font-size:2.4rem;
+    margin-bottom:2rem;
 }
 #mainWords{
     width:45%;
+}
+#mainWords p {
+    font-size:3rem;
 }
 
 footer{
     text-align:center;
     background-color:lightblue;
-    border: 4px solid lightgreen;
+    border: .25rem solid lightgreen;
 }
 
 div.zeus {
@@ -111,4 +122,78 @@ h4.zeus {
     flex-direction:column;
     align-self:center;
     
+}
+
+@media (max-width:800px){
+    button{
+        font-size:1.8rem;
+    }
+    h1{
+        font-size:6rem;
+        margin-left: 1rem;
+    }
+    h2{
+        font-size:4rem;
+    }
+    h3{
+        font-size:2.6rem;
+    }
+    #mainWords p {
+        font-size:1.8rem;
+    }
+    h4 {
+        font-size:1.4rem;
+    }
+    .head{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
+
+@media (max-width:500px){
+    button{
+        font-size: 1rem;
+    }
+    h1{
+        font-size:4rem;
+    }
+    h2{
+      font-size:3rem;  
+    }
+    h3{
+        font-size:2rem;
+    }
+    h4{
+        font-size:1.2rem;
+    }
+    #mainWords p {
+        font-size:1.4rem;
+    }
+}
+
+@media (max-width:360px){
+    h1{
+    font-size:4rem;
+    }
+    h2{
+    font-size:2rem;
+    margin-bottom:.5rem;
+    }
+    h3{
+    font-size: 1.8rem;
+    margin-bottom:.5rem;
+    }
+    h4{
+        font-size:1.1rem;
+    }
+    head{
+        font-size:.7rem;
+    }
+    #mainWords p {
+        font-size:1.1rem;
+    }
+
+
 }
