@@ -71,8 +71,12 @@ header nav{
 
 #pics {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+align-items:center;
+flex-wrap:wrap;
+align-content:baseline;
 }
+
 #home{
     background-color:blueviolet;
     color:white;
@@ -95,6 +99,16 @@ footer{
 
 div.zeus {
     display:flex;
-    flex:1 1 100px;
+  /*  flex:1 1 100px; */
+    max-width:23%;
     justify-content: space-around;
+    flex-direction:column;
+}
+
+
+h4.zeus {
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    
 }
